@@ -1,0 +1,4 @@
+{
+  "name": "AI-for-Trades DPR",
+  "install": "python3 -m pip install --quiet -r requirements.txt"
+}
