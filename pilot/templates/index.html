@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mistri AI</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Mistri AI</h1>
+      <p id="tagline">Delhi pilot · website on this computer</p>
+    </div>
+    <div class="row">
+      <button type="button" id="lang" class="secondary">हिंदी</button>
+      <button type="button" id="signout" class="secondary hidden">Sign out</button>
+    </div>
+  </header>
+  <main>
+    <div class="banner" id="banner">
+      This is the website channel only. The one-time password appears on this page. No text message is sent. WhatsApp, the Android app, UPI, GST, and maps are not connected.
+    </div>
+    <p class="error" id="error"></p>
+    <section id="view-phone" class="card">
+      <h2 id="h-phone">Sign in with your mobile number</h2>
+      <label id="l-phone">Mobile number</label>
+      <input id="phone" inputmode="numeric" maxlength="10" placeholder="98xxxxxxxx">
+      <button type="button" id="send-code">Send code</button>
+    </section>
+    <section id="view-code" class="card hidden">
+      <h2>Enter the code</h2>
+      <p class="muted">Local pilot code: <code id="demo-code"></code></p>
+      <label>One-time password</label>
+      <input id="code" inputmode="numeric" maxlength="6">
+      <button type="button" id="verify">Continue</button>
+    </section>
+    <section id="view-profile" class="card hidden">
+      <h2>Your account</h2>
+      <label>Name</label>
+      <input id="name">
+      <label>Role</label>
+      <select id="role">
+        <option value="worker">Construction worker</option>
+        <option value="contractor">Contractor</option>
+        <option value="vendor">Vendor</option>
+      </select>
+      <label>Trade</label>
+      <input id="trade" placeholder="Mason, painter, cement">
+      <label>Delhi locality</label>
+      <input id="locality" placeholder="Laxmi Nagar">
+      <button type="button" id="save-profile">Save</button>
+    </section>
+    <section id="view-home" class="hidden">
+      <div class="card">
+        <h2 id="hello"></h2>
+        <p class="muted" id="who"></p>
+        <div class="row" id="home-actions"></div>
+      </div>
+      <div id="panel"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
